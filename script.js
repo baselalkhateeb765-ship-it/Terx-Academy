@@ -1,0 +1,1 @@
+function check(correct){const f=document.getElementById('feedback');f.textContent=correct?'إجابة صحيحة! loop() بتكرر الأوامر طول ما البوردة شغالة.':'مش بالضبط! فكّر في الدالة اللي بتكرر الأوامر باستمرار.';f.style.color=correct?'#58d6a0':'#ffbd70'}

@@ -1,0 +1,90 @@
+  <html lang="ar" dir="rtl"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>    TerX Academy    </title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="TerX Academy Arduino Learning Emblem.png">
+</head>
+<body>
+<header><div class="wrap"><nav><a class="brand" href="#">ARDUINO<span>LAB</span></a><div class="links"><a href="#about">عن الموقع</a><a href="#learn">المسار التعليمي</a><a href="#code">جرّب كود</a><a href="#quiz">اختبر نفسك</a></div><button class="btn" id="langBtn" type="button" onclick="toggleLanguage()">English</button><a class="btn" href="#learn">ابدأ التعلّم</a></nav></div></header>
+<main>
+<div class="wrap">
+<section class="hero">
+<div><span class="tag">من الصفر إلى أول مشروع إلكتروني</span><h1>اتعلّم الأردوينو،<br><span style="color:var(--cyan)">وابنِ أفكارك بنفسك.</span></h1><p>رحلتك في عالم الإلكترونيات والبرمجة تبدأ من هنا. دروس بسيطة بالعربي، تطبيقات عملية، وأفكار مشاريع خطوة بخطوة.</p><a class="btn" href="#learn">ابدأ أول درس ←</a>
+<div class="stats"><div class="stat"><strong>مبتدئ</strong><span>مناسب لأول مرة</span></div><div class="stat"><strong>عملي</strong><span>تعلّم بالتجربة</span></div><div class="stat"><strong>بالعربي</strong><span>شرح واضح وبسيط</span></div></div></div>
+<div class="hero-art"><span class="pin p1"></span><div class="chip"><div><b>Terx Academy</b><br><small>ARDUINO BOARD</small></div></div><span class="pin p2"></span></div>
+</section>
+<section id="about"><div class="section-head"><h2>هتتعلّم إيه؟</h2><p>أساسيات مهمة قبل ما تبدأ تصنع مشاريعك.</p></div><div class="grid">
+<div class="card"><div class="icon">⌘</div><h3>أساسيات الأردوينو</h3><p>اعرف البوردة، أطراف التوصيل، وإزاي ترفع برنامج عليها.</p></div>
+<div class="card"><div class="icon">⌁</div><h3>الإلكترونيات</h3><p>افهم الكهرباء والمقاومات والـ LED والحساسات بطريقة سهلة.</p></div>
+<div class="card"><div class="icon">⌨</div><h3>البرمجة</h3><p>اتعلّم المتغيرات والشروط والتكرار وكتابة كود Arduino.</p></div>
+</div></section>
+<section id="learn"><div class="section-head"><h2>المسار التعليمي</h2><p>امشِ بالترتيب، وكل درس هيمهّد للي بعده.</p></div><div class="lesson-list">
+<div class="lesson"><div class="num">01</div><div><b>يعني إيه Arduino؟</b><p>فكرة البوردة واستخداماتها وأمثلة من الحياة.</p></div><a class="btn" href="#lesson1">افتح الدرس</a></div>
+<div class="lesson"><div class="num">02</div><div><b>التعرّف على البوردة والمنافذ</b><p>Digital وAnalog و5V وGND وUSB.</p></div><a class="btn" href="#lesson2">افتح الدرس</a></div>
+<div class="lesson"><div class="num">03</div><div><b>أول دائرة LED</b><p>توصيل LED ومقاومة وفهم القطبية.</p></div><a class="btn" href="#lesson3">افتح الدرس</a></div>
+<div class="lesson"><div class="num">04</div><div><b>أول كود ليك</b><p>فهم setup وloop وكتابة أوامر بسيطة.</p></div><a class="btn" href="#code">افتح الدرس</a></div>
+</div></section>
+<section id="lesson1"><div class="card"><h2>الدرس الأول: يعني إيه Arduino؟</h2><p>الأردوينو لوحة إلكترونية صغيرة تقدر تبرمجها عشان تقرأ بيانات من حساسات، وتتحكم في حاجات زي اللمبات والجرس والسيرفو. تخيّلها عقل مشروعك الإلكتروني: تستقبل معلومات، تنفّذ أوامر، وتتحكم في المكونات.</p></div></section>
+<section id="lesson2"><div class="card"><h2>الدرس الثاني: تعرّف على المنافذ</h2><p><b style="color:var(--cyan)">GND:</b> الأرضي أو الطرف السالب في الدائرة.</p><p><b style="color:var(--cyan)">5V:</b> خرج جهد 5 فولت للمكونات المتوافقة.</p><p><b style="color:var(--cyan)">Digital pins:</b> للتعامل مع إشارات تشغيل/إيقاف أو بيانات رقمية.</p><p><b style="color:var(--cyan)">Analog pins:</b> لقراءة قيم متغيرة من بعض الحساسات.</p><p style="color:#ffcf7a">مهم: افصل الطاقة قبل تغيير التوصيلات، وتأكد من جهد كل قطعة قبل توصيلها.</p></div></section>
+<section id="lesson3"><div class="card"><h2>الدرس الثالث: فكرة دائرة LED</h2><p>الدائرة التعليمية المعتادة تتكوّن من LED ومقاومة مناسبة وأسلاك وبوردة Arduino. المقاومة تحدّ من التيار وتحمي الـ LED. راجع قطبية القطعة ومخططها قبل التوصيل.</p></div></section>
+<section id="code"><div class="section-head"><h2>جرّب أول كود</h2><p>مثال تشغيل وإطفاء LED المدمج على البوردة.</p></div><div class="code"><span class="comment">// Blink: تشغيل وإطفاء الليد المدمج</span><br>void setup() {<br>&nbsp;&nbsp;pinMode(LED_BUILTIN, OUTPUT);<br>}<br><br>void loop() {<br>&nbsp;&nbsp;digitalWrite(LED_BUILTIN, HIGH);<br>&nbsp;&nbsp;delay(1000);<br>&nbsp;&nbsp;digitalWrite(LED_BUILTIN, LOW);<br>&nbsp;&nbsp;delay(1000);<br>}</div><p style="color:var(--muted);font-size:13px">الفكرة: setup بتشتغل مرة عند البداية، وloop بتتكرر باستمرار.</p></section>
+<section id="quiz"><div class="section-head"><h2>اختبر نفسك</h2><p>سؤال سريع بعد أول درس.</p></div><div class="quiz"><b>إيه وظيفة الدالة loop() في برنامج الأردوينو؟</b><div class="answers"><button class="answer" onclick="check(false)">بتشتغل مرة واحدة فقط</button><button class="answer" onclick="check(true)">بتكرر الأوامر باستمرار</button><button class="answer" onclick="check(false)">بتوصل البوردة بالإنترنت</button><button class="answer" onclick="check(false)">بتحذف البرنامج</button></div><div id="feedback"></div></div></section>
+</div></main>
+<footer><div class="wrap">ARDUINOLAB — اتعلّم، جرّب، ابتكر. <br>محتوى تعليمي تجريبي قابل للتطوير.</div></footer>
+<script src="script.js"></script>
+
+<script>
+let currentLang = 'ar';
+const translations = {
+'عن الموقع':'About','المسار التعليمي':'Learning Path','جرّب كود':'Try Code','اختبر نفسك':'Quiz',
+'ابدأ أول درس ←':'Start First Lesson ←','ابدأ التعلّم':'Start Learning',
+'من الصفر إلى أول مشروع إلكتروني':'From Zero to Your First Electronics Project',
+'اتعلّم الأردوينو،':'Learn Arduino,','وابنِ أفكارك بنفسك.':'Build Your Own Ideas.',
+'رحلتك في عالم الإلكترونيات والبرمجة تبدأ من هنا. دروس بسيطة بالعربي، تطبيقات عملية، وأفكار مشاريع خطوة بخطوة.':'Your journey into electronics and programming starts here. Simple lessons, practical exercises, and project ideas step by step.',
+'مناسب لأول مرة':'Beginner Friendly','تعلّم بالتجربة':'Learn by Doing','شرح واضح وبسيط':'Clear Explanations',
+'هتتعلّم إيه؟':'What Will You Learn?','أساسيات مهمة قبل ما تبدأ تصنع مشاريعك.':'Important basics before you start building projects.',
+'أساسيات الأردوينو':'Arduino Basics','اعرف البوردة، أطراف التوصيل، وإزاي ترفع برنامج عليها.':'Learn about the board, pins, and how to upload a program.',
+'الإلكترونيات':'Electronics','افهم الكهرباء والمقاومات والـ LED والحساسات بطريقة سهلة.':'Understand electricity, resistors, LEDs, and sensors in a simple way.',
+'البرمجة':'Programming','اتعلّم المتغيرات والشروط والتكرار وكتابة كود Arduino.':'Learn variables, conditions, loops, and Arduino code.',
+'المسار التعليمي':'Learning Path','امشِ بالترتيب، وكل درس هيمهّد للي بعده.':'Follow the lessons in order; each one prepares you for the next.',
+'يعني إيه Arduino؟':'What Is Arduino?','فكرة البوردة واستخداماتها وأمثلة من الحياة.':'Understand the board, its uses, and real-life examples.',
+'التعرّف على البوردة والمنافذ':'Getting to Know the Board and Pins','Digital وAnalog و5V وGND وUSB.':'Digital, Analog, 5V, GND, and USB.',
+'أول دائرة LED':'Your First LED Circuit','توصيل LED ومقاومة وفهم القطبية.':'Connect an LED and resistor and understand polarity.',
+'أول كود ليك':'Your First Code','فهم setup وloop وكتابة أوامر بسيطة.':'Understand setup and loop and write simple commands.',
+'افتح الدرس':'Open Lesson','الدرس الأول: يعني إيه Arduino؟':'Lesson 1: What Is Arduino?',
+'الأردوينو لوحة إلكترونية صغيرة تقدر تبرمجها عشان تقرأ بيانات من حساسات، وتتحكم في حاجات زي اللمبات والجرس والسيرفو. تخيّلها عقل مشروعك الإلكتروني: تستقبل معلومات، تنفّذ أوامر، وتتحكم في المكونات.':'Arduino is a small electronic board that you can program to read sensor data and control things like lights, buzzers, and servos. Think of it as the brain of your electronic project: it receives information, runs commands, and controls components.',
+'الدرس الثاني: تعرّف على المنافذ':'Lesson 2: Know the Pins','الأرضي أو الطرف السالب في الدائرة.':'Ground, or the negative reference in the circuit.','خرج جهد 5 فولت للمكونات المتوافقة.':'A 5-volt output for compatible components.','للتعامل مع إشارات تشغيل/إيقاف أو بيانات رقمية.':'Used for on/off signals or digital data.','لقراءة قيم متغيرة من بعض الحساسات.':'Used to read changing values from some sensors.','مهم: افصل الطاقة قبل تغيير التوصيلات، وتأكد من جهد كل قطعة قبل توصيلها.':'Important: Disconnect power before changing wiring, and check each component’s voltage before connecting it.',
+'الدرس الثالث: فكرة دائرة LED':'Lesson 3: LED Circuit Basics','الدائرة التعليمية المعتادة تتكوّن من LED ومقاومة مناسبة وأسلاك وبوردة Arduino. المقاومة تحدّ من التيار وتحمي الـ LED. راجع قطبية القطعة ومخططها قبل التوصيل.':'A basic learning circuit uses an LED, a suitable resistor, wires, and an Arduino board. The resistor limits current and protects the LED. Check the component polarity and diagram before wiring.',
+'جرّب أول كود':'Try Your First Code','مثال تشغيل وإطفاء LED المدمج على البوردة.':'An example that turns the board’s built-in LED on and off.',
+'الفكرة: setup بتشتغل مرة عند البداية، وloop بتتكرر باستمرار.':'The idea: setup runs once at startup, while loop repeats continuously.',
+'اختبر نفسك':'Test Yourself','سؤال سريع بعد أول درس.':'A quick question after your first lesson.',
+'إيه وظيفة الدالة loop() في برنامج الأردوينو؟':'What does the loop() function do in an Arduino program?',
+'بتشتغل مرة واحدة فقط':'It runs only once','بتكرر الأوامر باستمرار':'It repeats commands continuously',
+'بتوصل البوردة بالإنترنت':'It connects the board to the internet','بتحذف البرنامج':'It deletes the program',
+'ARDUINOLAB — اتعلّم، جرّب، ابتكر.':'ARDUINOLAB — Learn, Experiment, Create.',
+'محتوى تعليمي تجريبي قابل للتطوير.':'An educational demo that can be expanded.',
+'إجابة صحيحة! loop() بتكرر الأوامر طول ما البوردة شغالة.':'Correct! loop() repeats commands while the board is running.',
+'مش بالضبط! فكّر في الدالة اللي بتكرر الأوامر باستمرار.':'Not quite! Think of the function that repeats commands continuously.'
+};
+const originalTexts = new WeakMap();
+function toggleLanguage(){
+  currentLang = currentLang === 'ar' ? 'en' : 'ar';
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  let node;
+  while(node = walker.nextNode()){
+    if(!originalTexts.has(node)) originalTexts.set(node, node.nodeValue);
+    const original = originalTexts.get(node).trim();
+    if(!original) continue;
+    const translated = translations[original];
+    if(currentLang === 'en' && translated) node.nodeValue = node.nodeValue.replace(original, translated);
+    if(currentLang === 'ar') node.nodeValue = originalTexts.get(node);
+  }
+  document.documentElement.lang = currentLang;
+  document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+  document.getElementById('langBtn').textContent = currentLang === 'ar' ? 'English' : 'العربية';
+  document.title = currentLang === 'ar' ? 'ARDUINO LAB | تعلّم الأردوينو' : 'ARDUINO LAB | Learn Arduino';
+}
+</script>
+</body></html>
